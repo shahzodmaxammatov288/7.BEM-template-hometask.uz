@@ -1,0 +1,223 @@
+/*Shahzod Maxammatov*/
+/*Tel:(90) 192-99-00*/
+/*Telegram:@Shakhzod_Makhammatov*/
+@import "fonts.css";
+*{margin: 0;padding: 0;}
+:root {
+    --l_r:'Lato-Regular';
+    --l_l:'Lato-Light';
+}
+/*-------HEADER BEGIN*/
+.header {
+    height: 100vh;
+    background: url("../img_-_20/Back_1.jpg") no-repeat center center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-title {
+    color: #ffffff;
+    font-size: 34px;
+    margin: 100px 0;
+}
+.all-title {
+    text-align: center;
+    font-weight: 400;
+    font-family: "Myriad Pro";
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    position: relative;
+}
+.all-title::after {
+    content: '';
+    width: 105px;
+    height: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    transform: translateX(-52.5px);
+}
+.header-button {
+    padding: 16px 45px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    margin-bottom: 100px;
+    position: relative;
+    z-index: 5;
+}
+.header-button::after {
+    content: '';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease-in-out;
+}
+.header-button::before {
+    content: 'READ MORE';
+    position: absolute;
+    z-index: 17;
+}
+.header-button:hover::after {
+    width: 100%;
+    background-color: rgba(34, 34, 34, 0.81);
+}
+
+/*------- ABOUT Section*/
+
+.about {
+    text-align: center;
+    padding: 90px 0 190px 0;
+}
+.about__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about__block-title {
+    color: #000000;
+    font-size: 40px;
+    margin-bottom: 60px;
+    letter-spacing: 1.3mm;
+}
+.about .all-title::after {
+    content: '';
+    width: 105px;
+    height: 3px;
+    background-color: #000000;
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    transform: translateX(-52.5px);
+}
+.about__block-text {
+    color: #868585;
+    font-size: 15px;
+    max-width: 660px;
+    line-height: 1.8em;
+    margin-bottom: 104px;
+}
+.about__icon-title {
+    color: #000000;
+    font-family: var(--l_r);
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: .2em;
+    margin: 70px 0 37px;
+}
+.about__icon-text {
+    color: #868585;
+    font-family: var(--l_l);
+    font-size: 15px;
+}
+
+/*--------------------- PORTFOLIO section*/
+
+.portfolio {
+    padding: 106px 0 60px;
+    background-color: #f3f3f3;
+}
+.portfolio_text__block-title {
+    color: #000000;
+    font-size: 40px;
+    margin-bottom: 120px;
+    letter-spacing: 1.3mm;
+}
+.portfolio .all-title::after {
+    content: '';
+    width: 105px;
+    height: 3px;
+    background-color: #000000;
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    transform: translateX(-52.5px);
+}
+.portfolio_img__block {
+    margin-bottom: 30px;
+    position: relative;
+}
+.portfolio_img__block::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    transition: all .5s ease-in;
+}
+.portfolio_img__block:hover::after {
+    height: 100%;
+}
+.portfolio-button {
+    padding: 16px 45px;
+    background-color: transparent;
+    border: 2px solid #000000;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    margin-top: 65px;
+    transition: all .5s ease-in;
+}
+.portfolio-button:hover {
+    background-color: #222222;
+    color: #ffffff;
+    border-color: #4baaee;
+}
+/*------------------PARTNER section*/
+.partner {
+    background: url("../img_-_20/Back_1.jpg") no-repeat center center / cover;
+    text-align: center;
+    padding: 100px 0;
+}
+.partner__text-title {
+    letter-spacing: 1mm;
+    font-weight: 400;
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 70px;
+}
+/*FOOTER begin*/
+
+.footer {
+    background-color: #3c3c3c;
+    padding: 100px 0;
+}
+.footer__block {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+}
+.footer__block-link {
+    color: #a4a4a4;
+    margin: 0 15px 0 15px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.footer__block-link:hover {
+    color: #ccc6bf;
+    text-decoration: none;
+}
+.footer__block-text {
+    color: #6c6c6c;
+    margin-top: 34px;
+    font-weight: 500;
+    margin-bottom: 0;
+    font-size: 16px;
+    letter-spacing: 0.4mm;
+}
+
+
+.b {
+    border: 2px solid yellow;
+}
